@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'orders/index'
+
+  get 'orders/new'
+
+  get 'orders/show'
+
+  get 'orders/edit'
+
+  get 'orders/destroy'
+
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'  
